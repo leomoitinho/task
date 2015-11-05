@@ -1,0 +1,38 @@
+2015-11-03 18:46:04 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Task could not be found.
+Exception Attributes: array (
+  'class' => 'Task',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /task
+Stack Trace:
+#0 /var/www/html/task/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-11-03 18:46:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Task could not be found.
+Exception Attributes: array (
+  'class' => 'Task',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /task/
+Stack Trace:
+#0 /var/www/html/task/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-11-03 19:31:24 Error: [Cake\Network\Exception\MethodNotAllowedException] Method Not Allowed
+Request URL: /task/delete/1
+Stack Trace:
+#0 /var/www/html/task/src/Controller/TaskController.php(96): Cake\Network\Request->allowMethod(Array)
+#1 [internal function]: App\Controller\TaskController->delete('1')
+#2 /var/www/html/task/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#3 /var/www/html/task/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 /var/www/html/task/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TaskController))
+#5 /var/www/html/task/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+

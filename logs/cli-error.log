@@ -1,0 +1,21 @@
+2015-11-03 19:21:44 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'task.users' doesn't exist
+Stack Trace:
+#0 /var/www/html/task/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'users', Array, Object(Cake\Database\Schema\Table))
+#1 /var/www/html/task/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(64): Cake\Database\Schema\Collection->describe('users', Array)
+#2 /var/www/html/task/vendor/cakephp/cakephp/src/ORM/Table.php(423): Cake\Database\Schema\CachedCollection->describe('users')
+#3 /var/www/html/task/vendor/cakephp/cakephp/src/ORM/Table.php(499): Cake\ORM\Table->schema()
+#4 /var/www/html/task/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(194): Cake\ORM\Table->primaryKey()
+#5 /var/www/html/task/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(110): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 /var/www/html/task/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('Users')
+#7 /var/www/html/task/vendor/cakephp/bake/src/Shell/BakeShell.php(250): Bake\Shell\Task\ModelTask->main('Users')
+#8 /var/www/html/task/vendor/cakephp/cakephp/src/Collection/CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('users', 0)
+#9 /var/www/html/task/vendor/cakephp/bake/src/Shell/BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#10 [internal function]: Bake\Shell\BakeShell->all('users')
+#11 /var/www/html/task/vendor/cakephp/cakephp/src/Console/Shell.php(436): call_user_func_array(Array, Array)
+#12 /var/www/html/task/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(212): Cake\Console\Shell->runCommand(Array, true, Array)
+#13 /var/www/html/task/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(179): Cake\Console\ShellDispatcher->_dispatch(Array)
+#14 /var/www/html/task/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(126): Cake\Console\ShellDispatcher->dispatch(Array)
+#15 /var/www/html/task/bin/cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#16 {main}
+
+
